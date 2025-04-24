@@ -32,7 +32,7 @@ def decrypt(encrypted_text):
         decrypted_text = unpad(decrypted, AES.block_size).decode('utf-8')
 
         end_time = time.time()
-        print(f"Tiempo de desencriptación: {end_time - start_time:.4f} segundos")
+        # print(f"Tiempo de desencriptación: {end_time - start_time:.4f} segundos")
 
         return decrypted_text
     except Exception as e:
